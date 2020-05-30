@@ -19,4 +19,5 @@ public class Conta {
 	private Integer agencia;
 	private Integer numero;
 	private String titular;
+	private Double saldo;
 }
