@@ -20,4 +20,11 @@ public class Conta {
 	private Integer numero;
 	private String titular;
 	private Double saldo;
+
+	public Conta() {}
+
+	public Conta(Long id) {
+		this.id = id;
+	}
+
 }

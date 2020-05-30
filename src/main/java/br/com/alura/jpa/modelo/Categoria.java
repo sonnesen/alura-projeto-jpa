@@ -7,10 +7,12 @@ import javax.persistence.Id;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Getter
 @NoArgsConstructor
+@ToString
 public class Categoria {
 
 	@Id
@@ -21,6 +23,10 @@ public class Categoria {
 
 	public Categoria(String nome) {
 		this.nome = nome;
+	}
+
+	public Categoria(Long id) {
+		this.id = id;
 	}
 
 }
